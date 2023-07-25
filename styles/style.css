@@ -1,0 +1,10 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+.btn-primarys{
+    border-radius: 8px;
+    background: #F85559;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+ 
