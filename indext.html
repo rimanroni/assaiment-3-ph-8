@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B8A3-fruit-brust</title>
+
     <!--  icon  -->
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
     <!-- Font Awesome -->
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  rel="stylesheet"/>
+
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!--  custom css file  -->
+
     <link rel="stylesheet" href="styles/style.css">
+
     <!-- tailwind css and daisy ui link here  -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,12 +28,53 @@
     <header class="container mx-auto">
 
         <!--  navbar  -->
+        <nav>
+          <div class="navbar lg:bg-[#F85559] rounded-full px-10 mt-2 text-black">
+            <div class="navbar-start lg:order-2">
+              
+              <div class=" flex lg:relative lg:-left-[200px] justify-center items-center  normal-case text-xl">
+                 <img src="images/logo.png" alt="">
+                 <h1 class="font-bold ml-4 lg:text-white md:text-4xl ">Fruit Burst</h1>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a> Home</a></li>
+                <li tabindex="0">
+                     <summary>About Us</summary>
+                  </li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 relative -left-[200px] lg:-left-[380px] z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li>
+                    <a>About Us</a>
+                   </li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                  <li><input type="text" placeholder="Search" class="input rounded-full input-bordered w-24 md:w-auto" /></li>
+                </ul>
+               </div>
+             
+               <div class="form-control hidden lg:block   lg:relative -right-[400px] lg:-right-[330px] md:-right-[300px]">
+                <input type="text" placeholder="Search" class="input rounded-full input-bordered w-24 md:w-auto" />
+              </div>
+            </div>
+          </div>
+        </nav>
         
     </header>
     <!-- main part  -->
     <main class="container mx-auto">
         <!--  curousel  -->
-        <section  class="my-20   ">
+        <section  class="  lg:mt-5  ">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                <div class=" flex text-white  justify-center items-center text-center h-[500px] w-full bg-cover bg-center"style="background-image: url(images/banner1.png);">  
@@ -92,7 +138,7 @@
         </section>
         <!-- curousel bttom part  -->
         <section class=" px-20  py-4 relative -top-36 ">
-            <div class=" flex justify-center gap-4 flex-col lg:flex-row md:flex-col   bg-white rounded-md ">
+            <div class=" px-20   gap-4 py-10  grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-5   bg-white rounded-md ">
                 <div class="text-center">
                     <img src="images/fruit1.png" alt="">
                     <p>Strawberry</p>
@@ -124,7 +170,7 @@
                 <p class="font-semibold">Contrary to popular belief, is not simply random text. It has roots in a piece of classical  <br> Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div>
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="grid grid-flow-col mt-10 gap-5 text-center auto-cols-max ">
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
                         <span style="--value:29;"> </span>   :
@@ -177,8 +223,8 @@
             <form method="dialog" class="modal-box">
                <div class=" ">
                   <div>
-                    <img src="images/fruit8.png" class="mx-auto" alt="">
-                    <h3 class="font-bold text-lg">Red Dragon</h3>
+                    <img src="images/fruit6.png" class="mx-auto" alt="">
+                    <h3 class="font-bold text-lg">Apple</h3>
                     <p class="py-4">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
                     <div class="rating">
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -204,12 +250,12 @@
 
                   <div class="card     border ">
                     <figure class="px-10 pt-10">
-                      <img src="images/fruit6.png" alt="fruit-img-here " class="rounded-xl" />
+                      <img src="images/fruit7.png" alt="fruit-img-here " class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title border-b-2 border-gray-500 pb-4">12.90$ - 18.85$</h2>
                       
-                      <p>Apples</p>
+                      <p>Orange</p>
                       <div class="rating">
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -250,12 +296,12 @@
 
                    <div class="card     border ">
                     <figure class="px-10 pt-10">
-                      <img src="images/fruit6.png" alt="fruit-img-here " class="rounded-xl" />
+                      <img src="images/fruit8.png" alt="fruit-img-here " class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title border-b-2 border-gray-500 pb-4">12.90$ - 18.85$</h2>
                       
-                      <p>Apples</p>
+                      <p>Red Dragon</p>
                       <div class="rating">
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -269,8 +315,8 @@
             <form method="dialog" class="modal-box">
                <div class=" ">
                   <div>
-                    <img src="images/fruit9.png" class="mx-auto" alt="">
-                    <h3 class="font-bold text-lg">Banana</h3>
+                    <img src="images/fruit8.png" class="mx-auto" alt="">
+                    <h3 class="font-bold text-lg">Red Dragon</h3>
                     <p class="py-4">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
                     <div class="rating">
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -296,12 +342,12 @@
 
                    <div class="card     border ">
                     <figure class="px-10 pt-10">
-                      <img src="images/fruit6.png" alt="fruit-img-here " class="rounded-xl" />
+                      <img src="images/fruit9.png" alt="fruit-img-here " class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title border-b-2 border-gray-500 pb-4">12.90$ - 18.85$</h2>
                       
-                      <p>Apples</p>
+                      <p>Banana </p>
                       <div class="rating">
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -315,8 +361,8 @@
             <form method="dialog" class="modal-box">
                <div class=" ">
                   <div>
-                    <img src="images/fruit6.png" class="mx-auto" alt="">
-                    <h3 class="font-bold text-lg">Apples</h3>
+                    <img src="images/fruit9.png" class="mx-auto" alt="">
+                    <h3 class="font-bold text-lg">Banana</h3>
                     <p class="py-4">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
                     <div class="rating">
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -365,10 +411,10 @@
                        <img src="images/member1.png" class="ml-2" alt="">
                        <h2 class="text-2xl font-bold">Awlad Hossain</h2>
                        <p class="font-semibold pb-4">Fruits Expert</p>
-                       <div class="space-x-2">
-                        <i class="fa-brands fa-facebook fa-2xl"></i>
-                        <i class="fa-brands fa-twitter fa-2xl"></i>
-                        <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                       <div class="space-x-2  ">
+                        <i class="fa-brands fa-facebook md:fa-2xl"></i>
+                        <i class="fa-brands fa-twitter md:fa-2xl"></i>
+                        <i class="fa-brands fa-linkedin-in md:fa-2xl "></i>
                         </div>
                      </div>
                      <!--  card  -->
@@ -377,9 +423,9 @@
                         <h2 class="text-2xl font-bold">Safia riman </h2>
                         <p class="font-semibold pb-4">Fruits Expert</p>
                         <div class="space-x-2">
-                         <i class="fa-brands fa-facebook fa-2xl"></i>
-                         <i class="fa-brands fa-twitter fa-2xl"></i>
-                         <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                         <i class="fa-brands fa-facebook md:fa-2xl"></i>
+                         <i class="fa-brands fa-twitter md:fa-2xl"></i>
+                         <i class="fa-brands fa-linkedin-in md:fa-2xl"></i>
                          </div>
                       </div>
                       <!--  card  -->
@@ -388,9 +434,9 @@
                         <h2 class="text-2xl font-bold">Rokib Hossain</h2>
                         <p class="font-semibold pb-4">Fruits Expert</p>
                         <div class="space-x-2">
-                         <i class="fa-brands fa-facebook fa-2xl"></i>
-                         <i class="fa-brands fa-twitter fa-2xl"></i>
-                         <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                         <i class="fa-brands fa-facebook md:fa-2xl"></i>
+                         <i class="fa-brands fa-twitter md:fa-2xl"></i>
+                         <i class="fa-brands fa-linkedin-in md:fa-2xl"></i>
                          </div>
                       </div>
                      <!--  card  -->
@@ -399,9 +445,9 @@
                         <h2 class="text-2xl font-bold">Chaity</h2>
                         <p class="font-semibold pb-4">Fruits Expert</p>
                         <div class="space-x-2">
-                         <i class="fa-brands fa-facebook fa-2xl"></i>
-                         <i class="fa-brands fa-twitter fa-2xl"></i>
-                         <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                         <i class="fa-brands fa-facebook md:fa-2xl"></i>
+                         <i class="fa-brands fa-twitter md:fa-2xl"></i>
+                         <i class="fa-brands fa-linkedin-in md:fa-2xl"></i>
                          </div>
                       </div>
                 </div>
@@ -497,7 +543,7 @@
             <h1 class="text-4xl font-bold ml-4">Fruit Burst</h1>
         </div>
         <div>
-            <ul class="flex gap-5 justify-center lg:gap-12 mt-5">
+            <ul class="flex flex-wrap  gap-5 justify-center lg:gap-12 mt-5">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Shop</li>
